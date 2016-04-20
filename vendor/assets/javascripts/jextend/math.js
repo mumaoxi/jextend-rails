@@ -4,7 +4,7 @@ Math.n_pow = function(number,n){
      result = result*number;
   }
   return result;
-}
+};
 
 Math.decimal_point = function(str,point_number){
   var float = parseFloat(str);
@@ -13,4 +13,4 @@ Math.decimal_point = function(str,point_number){
   }
   var point = Math.n_pow(10,point_number);
   return Math.round(float * point) / point;
-}
+};
