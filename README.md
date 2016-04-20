@@ -24,7 +24,7 @@ Or install it yourself as:
 
     $ gem install jextend
 
-Write this in your application.js
+Write this in your `application.js`
 ```javascript
 //=require jextend
 ```
