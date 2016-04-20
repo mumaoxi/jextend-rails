@@ -59,7 +59,7 @@ Math.decimal_point('3.3333',2);
 ### window.location.params
 ```javascript
 //current_url: http://localhost:3000/?start_date=2015-12-06&type=newer_
-window.location.params
+window.location.params()
 //=>{start_date:'2015-12-06',type:'newer'}
 ```
 
