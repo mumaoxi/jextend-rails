@@ -1,8 +1,6 @@
 # Jextend
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jextend`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+常用的一些javascript函数总结
 
 ## Installation
 
@@ -20,15 +18,45 @@ Or install it yourself as:
 
     $ gem install jextend
 
+Write this in your application.js
+```javascript
+//=require jextend
+```
+
 ## Usage
+### Array
 
-TODO: Write usage instructions here
+```javascript
+[2,3,5].contains(3);
+//=>true
+[2,3,5].contains(6);
+//=>false
+```
+### Date
 
-## Development
+```javascript
+new Date().format('yyyy-MM-dd');
+//=>"2016-04-20"
+```
+### Math
+```javascript
+Math.n_pow(2,3);
+//=>8_
+Math.decimal_point('3.3333',2);
+//=>3.33_
+```
+### String
+```javascript
+"Good {0} everyone.How do {1} do?".format('morning','you');
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+### window.location.params
+```javascript
+//current_url: http://localhost:3000/?start_date=2015-12-06&type=newer_
+window.location.params
+//=>{start_date:'2015-12-06',type:'newer'}
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
