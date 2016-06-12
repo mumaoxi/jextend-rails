@@ -20,3 +20,19 @@ String.prototype.format = function (args) {
     }
     return result;
 };
+
+/**
+ * 生成随机字符串
+ * @param len 字符串长度
+ * @param includeUpcase 是否包含大写字符,默认为false
+ * @returns {string}
+ */
+String.random = function (len, includeUpcase) {
+    var str = '0123456789abcdefghijklmnopqrstuvwxyz';
+    var randomStr = '';
+    for (var i = 0; i < len; i++) {
+        var c = String(str[parseInt(Math.random() * str.length)]);
+        randomStr += (includeUpcase && parseInt(Math.random() * 10) % 2 == 0) ? c.toUpperCase() : c;
+    }
+    return randomStr;
+};

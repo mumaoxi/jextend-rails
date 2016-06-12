@@ -52,8 +52,17 @@ Math.decimal_point('3.3333',2);
 //=>3.33_
 ```
 ### String
+
 ```javascript
 "Good {0} everyone.How do {1} do?".format('morning','you');
+//=> "Good morning everyone.How do you do?"
+
+String.random(32);
+//=>"t7m5dzu3zn2jxb34qykjkrifjeo77rj1"
+
+String.random(10,true);
+//=>"f0jz19hgER"
+
 ```
 
 ### window.location.params
